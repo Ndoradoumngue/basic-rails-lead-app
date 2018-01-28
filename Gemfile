@@ -53,8 +53,15 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'globalize', '~> 5.1.0.beta2'
 
-gem 'pg', '1.0.0'
-gem 'rails_12factor'
+group :development do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg', '~> 1.0'
+  gem 'rails_12factor'
+end
 
 
 
