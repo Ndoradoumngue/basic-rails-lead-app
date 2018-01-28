@@ -1,0 +1,37 @@
+en:
+  homeLinkName: "Home"
+  newLeadName: "Add lead"
+  confirmMessage: "Do you really want to delete this record?"
+  editName: "Edit"
+  deleteName: "Delete"
+  viewDetailsName: "Manage Lead"
+  formName: "Submit"
+
+
+  leads:
+    index:
+      welcomeWord: "Welcome to our Lead list"
+      createdTimeTitle: "Created At"
+      
+
+    edit:
+      editLead: "Edit Lead"
+
+    new:
+      addLeadTitle: "Add lead"
+      
+
+  layouts:
+    application:
+      languageName: "Language"
+
+
+  activerecord:
+    attributes:
+      lead:
+        name: "Full Name"
+        email: "Email Address"
+        job_post: "Job Post"
+        company: "Company"
+
+

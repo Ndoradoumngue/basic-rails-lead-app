@@ -1,0 +1,25 @@
+<h2 class="welcomeMessage"><%= t ".welcomeWord" %></h2>
+
+<%= form_tag leads_path, :method => 'get' do %>
+
+	<p class="search">
+		<%= text_field_tag :search, params[:search], placeholder: 'Search a lead', :required => "required" %>
+
+		<%= submit_tag "search", :class => "submit-search", :name => nil %>
+	</p>
+
+<% end %>
+
+<% @lead.each do |lead| %>
+
+	<div class="box-profile">
+		<b> <%= Lead.human_attribute_name(:name) %> : </b> <span class="float-right"><%= lead.name %></span><br/>
+		<b> <%= Lead.human_attribute_name(:email) %> : </b> <span class="float-right"><%= lead.email %></span><br/>
+		<b> <%= Lead.human_attribute_name(:job_post) %> : </b> <span class="float-right"><%= lead.job_post %></span><br/>
+		<b> <%= Lead.human_attribute_name(:company) %> :</b><span class="float-right"> <%= lead.company %></span><br/>
+		<b> <%= t ".createdTimeTitle" %> : </b> <%= I18n.l(lead.created_at.in_time_zone('Nairobi')) %><br/>
+
+		<div class="manage-button"><%= link_to I18n.t(".viewDetailsName"), lead_path(lead) %></div>	
+	</div>
+
+<% end %> 

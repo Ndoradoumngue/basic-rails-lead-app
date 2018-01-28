@@ -1,0 +1,19 @@
+<div class="lead-details">
+	<%= Lead.human_attribute_name(:name) %>: <%= @lead.name %><br/>
+	<hr>
+	<%= Lead.human_attribute_name(:email) %>: <%= @lead.email %><br/>
+	<hr>
+	<%= Lead.human_attribute_name(:job_post) %>: <%= @lead.job_post %><br/>
+	<hr>
+	<%= Lead.human_attribute_name(:company) %>: <%= @lead.company %><br/>
+	<hr>
+	<br/>
+
+
+
+
+
+<div class="edit-lead"><%= link_to I18n.t(".editName"), edit_lead_path(@lead) %></div>
+<div class="delete-lead"><%= link_to I18n.t(".deleteName"), lead_path(@lead), method: :delete, data: { confirm: I18n.t(".confirmMessage") } %></div>
+
+</div>

@@ -1,0 +1,32 @@
+es:
+  homeLinkName: "pagina principal"
+  newLeadName: "Añadir líder"
+  confirmMessage: "¿De verdad quieres borrar este registro?"
+  editName: "Editar"
+  deleteName: "Suprimir"
+  viewDetailsName: "Administrar líder"
+  formName: "Enviar"
+  
+
+  leads:
+    index:
+      welcomeWord: "Bienvenido a nuestra lista de candidatos"
+      createdTimeTitle: "creado en"
+
+    edit:
+      editLead: "Editar"
+
+    new:
+      addLeadTitle: "Añadir líder"
+
+  layouts:
+    application:
+      languageName: "Idioma"
+
+  activerecord:
+    attributes:
+      lead:
+        name: "Nombre completo"
+        email: "Dirección de correo electrónico"
+        job_post: "Puesto de trabajo"
+        company: "Empresa"

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ContactManager</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="navbar">
+
+
+      <ul class="nav-links">
+          <li class="border-right"> <%= link_to I18n.t(".homeLinkName"), leads_path() %> </li>
+          <li><%= link_to I18n.t(".newLeadName"), new_lead_path() %></li>
+        </ul> 
+
+        
+
+        <ul class="language-links">
+          <li><%= t ".languageName" %>: </li>
+          <li><%= link_to_unless_current "English", locale: "en" %></li>
+          <li><%= link_to_unless_current "Portugués", locale: "pt" %></li>
+          <%= link_to_unless_current "Español", locale: "es" %>
+        </ul> 
+
+        
+
+        
+        
+
+    </div>
+
+
+
+
+
+
+
+    <br/><Br/>
+
+
+    <%= yield %>
+
+
+
+
+
+
+
+  </body>
+</html>

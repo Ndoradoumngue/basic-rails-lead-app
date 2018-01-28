@@ -1,0 +1,222 @@
+body 
+{
+	font-family: 'Source Sans Pro',sans-serif;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #ecf0f5;
+}
+
+.navbar
+{
+	background-color: #3c8dbc;
+	color: white;
+    height: 50px;
+    transition: margin-left .3s ease-in-out;
+    margin-bottom: 0;
+
+}
+.nav-links
+{
+	float: left;
+}
+.nav-links li
+{
+	display: inline-block;
+	padding-left: 20px;
+}
+.border-right
+{
+	border-right: 2px solid white;
+	padding-right: 20px;
+}
+.nav-links a
+{
+	color: white;
+}
+.language-links
+{
+	float: right;
+	margin-right: 20px;
+}
+
+.language-links li
+{
+	display: inline-block;
+	padding-right: 20px;
+}
+.language-links a
+{
+	color: white;
+}
+.welcomeMessage
+{
+	font-size: 22px;
+	font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+}
+.box-profile
+{
+    border-radius: 3px;
+    padding: 15px;
+    position: relative;
+    min-height: 1px;
+    position: relative;    
+    background: #ffffff;
+    color: #556;
+    font-size: 16px;
+    border-top: 3px solid #3c8dbc;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 7%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    line-height: 1.5em;
+}
+.manage-button {
+    background-color: #3c8dbc;
+    border-color: #367fa9;
+    border-radius: 3px;
+    margin-top: 5%;
+    display: block;
+    width: 95%;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+}
+.manage-button a {
+    text-decoration: none;
+    color: white;
+}
+#search {
+    border-color: #d2d6de;
+    height: 20px;
+    width: 250px;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    
+}
+.submit-search
+{
+
+    background-color: #00acd6;
+    color: white;
+    border-color: #269abc;
+    border-radius: 3px;
+    border: 1px solid;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+
+}
+.lead-details
+{
+    border-radius: 3px;
+    padding: 15px;
+    padding-bottom: 60px;
+    position: relative;
+    min-height: 1px;
+    position: relative;    
+    background: #ffffff;
+    color: #556;
+    font-size: 16px;
+    border-top: 3px solid #3c8dbc;
+    margin-bottom: 20px;
+    width: 60%;
+    margin-left: 17%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    line-height: 1.5em;
+}
+.delete-lead a
+{
+
+    background-color: #d73925;
+    color: white;
+    border-color: #269abc;
+    border-radius: 3px;
+    border: 1px solid;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+.edit-lead a
+{
+
+    background-color: #00a65a;
+    color: white;
+    border-color: #269abc;
+    border-radius: 3px;
+    border: 1px solid;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+}
+.new_lead
+{
+    border-radius: 3px;
+    padding: 15px;
+    padding-bottom: 60px;
+    min-height: 1px;
+    position: relative;    
+    background: #ffffff;
+    color: #556;
+    font-size: 16px;
+    border-top: 3px solid #3c8dbc;
+    width: 60%;
+    margin-left: 17%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    line-height: 1.5em;
+}
+.new_lead #lead_name, #lead_email, #lead_job_post, #lead_company
+{
+    border-color: #d2d6de;
+    height: 20px;
+    width: 95%;
+    margin-bottom: 2%;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #555;
+    background-color: #fff;
+}
+.add-lead-button
+{
+
+    background-color: #00acd6;
+    color: white;
+    border-color: #269abc;
+    border-radius: 3px;
+    width: 20%;
+    border: 1px solid;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+
+}
+

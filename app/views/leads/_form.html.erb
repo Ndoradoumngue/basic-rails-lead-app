@@ -1,0 +1,27 @@
+<%= form_for @lead do |f| %>
+	<% if @lead.errors.any? %>
+		<h2><%= pluralize(@lead.errors.count, "error") %> raised. Please correct them to proceed.</h2>
+		<ul>
+			<% @lead.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+
+			<% end %>
+		</ul>
+	<% end %>
+
+	<%= f.label :name, Lead.human_attribute_name(:name) %><br/>
+	<%= f.text_field :name, :required => "required" %><br/><br/>
+
+	<%= f.label :email, Lead.human_attribute_name(:email) %><br/>
+	<%= f.email_field :email, :required => "required" %><br/><br/>
+
+	<%= f.label :job_post, Lead.human_attribute_name(:job_post) %><br/>
+	<%= f.text_field :job_post, :required => "required" %><br/><br/>
+
+	<%= f.label :company, Lead.human_attribute_name(:company) %><br/>
+	<%= f.text_field :company, :required => "required" %><br/><br/>
+
+	<%= f.submit I18n.t(".formName"), class: "add-lead-button" %>
+
+<% end %>
+
