@@ -14,6 +14,13 @@ To run the application in your computer, follow these steps:
 
 * Go to the link shown in your terminal to access the app (mostly localhost:3000)
 
+Run test
+
+* Open a terminal (if not yet opened) and navigate to the project directory by typing the command Cd <directory name>
+ 
+* Run the command 'rspec'
+
+ 
 General Asumptions
 We made the asumption that:
 * You have ruby (v 2.2.2 or higher) installed in your computer
